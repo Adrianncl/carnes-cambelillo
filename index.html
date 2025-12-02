@@ -1,60 +1,152 @@
 <!doctype html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página de inicio - Charcutería, Pollería y Carnicería</title>
+    <title>Carnes Cambelillo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #8b0000;
+            color: white;
+            padding: 15px;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 15px;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #8b0000;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #8b0000;
+            padding: 5px 0;
+            border-radius: 4px;
+            min-width: 150px;
+            flex-direction: column;
+            gap: 0;
+            z-index: 10;
+        }
+
+        .submenu li {
+            width: 100%;
+        }
+
+        .submenu a {
+            border-radius: 0;
+        }
+
+        .desplegable:hover .submenu {
+            display: flex;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
+
+<header>
+    <div class="header-inner">
         <h1>Carnes Cambelillo</h1>
-        <p>Charcutería, Pollería y Carnicería</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
 
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="SERVICIOS.html"">Servicios</a></li>
-        <li><a href="">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+                <li class="desplegable">
+                    <a href="docs/SERVICIOS.html">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="charcuteria.html">Charcutería</a></li>
+                        <li><a href="carniceria.html">Carnicería</a></li>
+                        <li><a href="polleria.html">Pollería</a></li>
+                    </ul>
+                </li>
 
-  </header>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="docs/contacto.html"">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-  <main>
-    <section id="bienvenida">
-        <h2>Bienvenido</h2>
-        <p>Ofrecemos productos frescos y de calidad: embutidos selectos, aves cuidadas y cortes de carne preparados por expertos.</p>
-        <img src="DATOS/Cambelillo.png" alt="Imagen de charcutería, pollería y carnicería" width="300" height="200">  
+<main>
+    <section>
+        <h2>Bienvenido a carnes Cambelillo</h2>
+        <p>Charcutería, pollería y carnicería con productos frescos y de calidad.</p>
     </section>
 
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <h3>Charcutería</h3>
-        <p>Embutidos artesanales y quesos.</p>
-        <h3>Pollería</h3>
-        <p>Pollos frescos y preparados.</p>
-         <h3>Carnicería</h3>
-        <p>Cortes de carne seleccionados.</p>
+    <section>
+        <h2>Servicios</h2>
+        <p>Ofrecemos embutidos artesanales, aves frescas y cortes de carne seleccionados.</p>
     </section>
 
-    <section id="productos">
+    <section>
         <h2>Productos Destacados</h2>
-      <ul>
-        <li>Chorizo artesano - €2.50</li>
-        <li>Pollo de corral - €8.90</li>
-        <li>Entrecot - €7.40</li>
-        <li>Jamón curado - €3.20</li>
-      </ul>
+        <ul>
+            <li>Chorizo artesano</li>
+            <li>Pollo de corral</li>
+            <li>Entrecot</li>
+            <li>Jamón curado</li>
+        </ul>
     </section>
 
-    <section id="contacto">
+    <section>
         <h2>Contacto</h2>
-        <p>Dirección: Calle Mercado 12, MADRID</p>
+        <p>Dirección: Calle Mercado 12, Madrid</p>
         <p>Teléfono: 600 123 456</p>
-        <p>Horario: Lunes a Viernes 9:00 - 20:00 | Sábado 9:00 - 14:00</p>
+        <p>Horario: Lunes a Viernes 9:00–20:00</p>
     </section>
-  </main>
+</main>
 
 </body>
 </html>
-
-
-
