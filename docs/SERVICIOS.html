@@ -1,28 +1,68 @@
-<!doctype html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página de inicio - Charcutería, Pollería y Carnicería</title>
-</head>
-<body>
-    <header>
-        <h1>Carnes Cambelillo</h1>
-        <p>Charcutería, Pollería y Carnicería</p>
-        <p> En construcción...</p>
-        
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="SERVICIOS.html">Servicios</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Servicios | Carnes Cambelillo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/servicios.css">
+    </head>
 
-    <section id="servicios">
+    <body>
+        <header>
+            <h1>Carnes Cambelillo</h1>
+            <p>Charcutería, Pollería y Carnicería</p>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="SERVICIOS.html">Servicios</a></li>
+                    <li><a href="PRODUCTOS.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="servicios">
             <h2>Nuestros Servicios</h2>
-            <h3>Charcutería</h3>
-            <p>Embutidos artesanales y quesos.</p>
-            <h3>Pollería</h3>
-            <p>Pollos frescos y preparados.</p>
-             <h3>Carnicería</h3>
-            <p>Cortes de carne seleccionados.</p>
+            <p>
+                En Carnes Cambelillo ofrecemos producto fresco, atención personalizada
+                y preparación al gusto de cada cliente.
+            </p>
+
+            <div class="servicios-grid">
+                <a href="charcuteria.html" class="servicio">
+                    <h3>Charcutería</h3>
+                    <ul>
+                        <li>Embutidos artesanales</li>
+                        <li>Selección de quesos</li>
+                        <li>Corte y envasado</li>
+                    </ul>
+                </a>
+
+                <a href="polleria.html" class="servicio">
+                    <h3>Pollería</h3>
+                    <ul>
+                        <li>Pollo fresco</li>
+                        <li>Despiece al momento</li>
+                        <li>Preparados y adobados</li>
+                    </ul>
+                </a>
+
+                <a href="carniceria.html" class="servicio">
+                    <h3>Carnicería</h3>
+                    <ul>
+                        <li>Cortes seleccionados</li>
+                        <li>Picado al gusto</li>
+                        <li>Hamburguesas caseras</li>
+                    </ul>
+                </a>
+            </div>
         </section>
+
+        <footer>
+            <p>
+                <a href="contacto.html">Contactar</a> · Carnes Cambelillo
+            </p>
+        </footer>
+    </body>
+</html>
