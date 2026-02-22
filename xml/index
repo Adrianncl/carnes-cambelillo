@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<pagina xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd">
+
+	    <cabecera>
+		      <titulo>Carnes Cambelillo</titulo>
+		      <subtitulo>Charcutería · Pollería · Carnicería</subtitulo>
+		      <logo>imágenes/logo.png</logo>
+      </cabecera>
+
+	    <portada>
+		      <imagen>imágenes/mostrador.jpg</imagen>
+		      <mensaje>Calidad y tradición desde 1985</mensaje>
+	      </portada>
+
+     <ofertas>
+	        	<oferta>
+			      <nombre>Chorizo artesano</nombre>
+		        <precio>6.50</precio>
+      </oferta>
+
+		  <oferta>
+			    <nombre>Pollo de corral</nombre>
+			    <precio>8.90</precio>
+		    </oferta>
+	    </ofertas>
+
+    	<marcas>
+		      <marca>Campofrío</marca>
+          <marca>Casa Tarradellas</marca>
+		      <marca>Tello</marca>
+		      <marca>5J</marca>
+		      <marca>García Baquero</marca>
+        	</marcas>
+  </pagina>

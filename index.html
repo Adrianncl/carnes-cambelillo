@@ -1,152 +1,176 @@
 <!doctype html>
 <html lang="es">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carnes Cambelillo</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Carnes Cambelillo</title>
+		<meta name="description" content="Carnes Cambelillo: charcutería, pollería y carnicería. Ofertas y productos destacados.">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-        }
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
-        header {
-            background-color: #8b0000;
-            color: white;
-            padding: 15px;
-        }
+	<body>
+		<header class="cabecera">
+			<div class="contenedor">
+				<div class="cabecera-marca">
+					<img class="logo" src="imágenes/cambelillo.png" alt="Logo Carnes Cambelillo">
 
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+				
+					<div class="texto-marca">
+						<h1>Carnes Cambelillo</h1>
+						<p>Charcutería · Pollería · Carnicería</p>
+					</div>
+				</div>
 
-        h1 {
-            margin: 0;
-        }
+				<nav class="menu" aria-label="Menú principal">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="docs/SERVICIOS.html">Servicios</a></li>
+						<li><a href="docs/PRODUCTOS.html">Productos</a></li>
+						<li><a href="docs/contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-            gap: 15px;
-        }
+				<div class="limpiar"></div>
+			</div>
+		</header>
 
-        nav li {
-            position: relative;
-        }
+	
+		<section class="portada" id="inicio">
+			<div class="contenedor">
+				<div class="portada-texto">
+					<h2>Carne fresca y selección de calidad</h2>
+					<p>Compra fácil, descubre nuestras ofertas y productos destacados.</p>
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            font-weight: bold;
-            display: block;
-        }
+					<p class="enlaces-portada">
+						<a class="enlace-destacado" href="#ofertas">Ver ofertas</a>
+						<span class="separador">·</span>
+						<a class="enlace-destacado" href="#destacados">Productos destacados</a>
+						<span class="separador">·</span>
+						<a class="enlace-destacado" href="#marcas">Marcas</a>
+					</p>
+				</div>
 
-        nav a:hover {
-            background-color: white;
-            color: #8b0000;
-        }
+				<div class="limpiar"></div>
+			</div>
+		</section>
 
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #8b0000;
-            padding: 5px 0;
-            border-radius: 4px;
-            min-width: 150px;
-            flex-direction: column;
-            gap: 0;
-            z-index: 10;
-        }
+		<div class="contenedor">
 
-        .submenu li {
-            width: 100%;
-        }
+		
+			<section class="seccion" id="ofertas">
+				<h2>Ofertas de la semana</h2>
+				<p>Haz clic en una oferta para ir a la sección correspondiente.</p>
 
-        .submenu a {
-            border-radius: 0;
-        }
+				<div class="bloques">
 
-        .desplegable:hover .submenu {
-            display: flex;
-        }
+				
+					<div class="bloque bloque-oferta">
+						<h3><a href="#destacados">Pack Barbacoa</a></h3>
+						<p>Selección de carne para parrilla (según disponibilidad).</p>
+						<p><strong>Desde 19,90 €</strong></p>
+						<p><a class="enlace-oferta" href="#destacados">Ir a destacados</a></p>
+					</div>
 
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 6px;
-        }
+					
+					<div class="bloque bloque-oferta">
+						<h3><a href="#marcas">Embutidos surtidos</a></h3>
+						<p>Chorizo, salchichón y lomo (varía por semana).</p>
+						<p><strong>Desde 12,00 €</strong></p>
+						<p><a class="enlace-oferta" href="#marcas">Ver marcas</a></p>
+					</div>
 
-        section {
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
+					<div class="bloque bloque-oferta">
+						<h3><a href="#contacto-rapido">Encargos por teléfono</a></h3>
+						<p>Te asesoramos y preparamos tu pedido.</p>
+						<p><strong>Llama y consulta</strong></p>
+						<p><a class="enlace-oferta" href="#contacto-rapido">Ir a contacto</a></p>
+					</div>
 
-<body>
+					<div class="limpiar"></div>
+				</div>
+			</section>
 
-<header>
-    <div class="header-inner">
-        <h1>Carnes Cambelillo</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
+			
+			<section class="seccion" id="destacados">
+				<h2>Productos destacados</h2>
+				<p>Una selección de los más pedidos.</p>
 
-                <li class="desplegable">
-                    <a href="docs/SERVICIOS.html">Servicios</a>
-                    <ul class="submenu">
-                        <li><a href="charcuteria.html">Charcutería</a></li>
-                        <li><a href="docs/carniceria.html">Carnicería</a></li>
-                        <li><a href="polleria.html">Pollería</a></li>
-                    </ul>
-                </li>
+				<div class="bloques">
 
-                <li><a href="docs/PRODUCTOS.html">Productos</a></li>
-                <li><a href="docs/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+					<div class="bloque bloque-producto">
+						<img src="imágenes/chorizo.png" alt="Chorizo artesano">
+						<h3>Chorizo artesano</h3>
+						<p>Ideal para bocadillo o guiso.</p>
+						<p><a class="enlace-oferta" href="docs/PRODUCTOS.html">Ver productos</a></p>
+					</div>
 
-<main>
-    <section>
-        <h2>Bienvenido a carnes Cambelillo</h2>
-        <p>Charcutería, pollería y carnicería con productos frescos y de calidad.</p>
-    </section>
+					<div class="bloque bloque-producto">
+						<img src="imágenes/pollo.png" alt="Pollo de corral">
+						<h3>Pollo de corral</h3>
+						<p>Perfecto para horno.</p>
+						<p><a class="enlace-oferta" href="docs/PRODUCTOS.html">Ver productos</a></p>
+					</div>
 
-    <section>
-        <h2>Servicios</h2>
-        <p>Ofrecemos embutidos artesanales, aves frescas y cortes de carne seleccionados.</p>
-    </section>
+					<div class="bloque bloque-producto">
+						<img src="imágenes/entrecot.png" alt="Entrecot">
+						<h3>Entrecot</h3>
+						<p>Corte premium para plancha.</p>
+						<p><a class="enlace-oferta" href="docs/PRODUCTOS.html">Ver productos</a></p>
+					</div>
 
-    <section>
-        <h2>Productos Destacados</h2>
-        <ul>
-            <li>Chorizo artesano</li>
-            <li>Pollo de corral</li>
-            <li>Entrecot</li>
-            <li>Jamón curado</li>
-        </ul>
-    </section>
+					<div class="limpiar"></div>
+				</div>
+			</section>
 
-    <section>
-        <h2>Contacto</h2>
-        <p>Dirección: Calle Mercado 12, Madrid</p>
-        <p>Teléfono: 600 123 456</p>
-        <p>Horario: Lunes a Viernes 9:00–20:00</p>
-    </section>
-</main>
+	
+			<section class="seccion" id="marcas">
+				<h2>Marcas con las que trabajamos</h2>
+				<p>Calidad y confianza con marcas reconocidas.</p>
 
-</body>
+				<div class="bloques">
+
+					<div class="bloque bloque-marca">
+						<img src="imágenes/campofrio.png" alt="Campofrío">
+					</div>
+
+					<div class="bloque bloque-marca">
+						<img src="imágenes/casa-tarradellas.png" alt="Casa Tarradellas">
+					</div>
+
+					<div class="bloque bloque-marca">
+						<img src="imágenes/tello.png" alt="Tello">
+					</div>
+
+					<div class="bloque bloque-marca">
+						<img src="imágenes/5j.png" alt="5 Jotas">
+					</div>
+
+					
+
+					<div class="limpiar"></div>
+				</div>
+			</section>
+
+			
+			<section class="seccion" id="contacto-rapido">
+				<h2>Contacto rápido</h2>
+				<p><strong>Dirección:</strong> Calle Mercado 12, Madrid</p>
+				<p><strong>Teléfono:</strong> <a href="tel:+34600123456">600 123 456</a></p>
+				<p><strong>Horario:</strong> Lunes a Viernes 9:00–20:00</p>
+				<p><a class="enlace-oferta" href="docs/contacto.html">Ir a la página de contacto</a></p>
+			</section>
+
+		</div>
+
+		<footer class="pie">
+			<div class="contenedor">
+				<p>
+					<a href="docs/contacto.html">Contacto</a> ·
+					<a href="xml/index.xml">Ver estructura XML</a> ·
+					<a href="xml/productos.xml">Ver XML de productos</a>
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>

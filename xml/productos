@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="productos.xsd">
+
+	    <producto id="P001">
+		      <nombre>Chorizo artesano</nombre>
+		      <categoria>Charcutería</categoria>
+		      <precio moneda="EUR">6.50</precio>
+		      <oferta>true</oferta>
+		      <stock>25</stock>
+		      <imagen>imágenes/chorizo.jpg</imagen>
+	</producto>
+
+    	<producto id="P002">
+          <nombre>Pollo de corral</nombre>
+		      <categoria>Pollería</categoria>
+		      <precio moneda="EUR">8.90</precio>
+		        <oferta>false</oferta>
+		        <stock>12</stock>
+		        <imagen>imágenes/pollo.jpg</imagen>
+      </producto>
+
+	    <producto id="P003">
+		      <nombre>Entrecot</nombre>
+          <categoria>Carnicería</categoria>
+		      <precio moneda="EUR">15.00</precio>
+		      <oferta>true</oferta>
+		      <stock>8</stock>
+		      <imagen>imágenes/entrecot.jpg</imagen>
+	</producto>
+
+</productos>

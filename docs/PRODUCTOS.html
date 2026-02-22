@@ -1,90 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Productos | Carnes Cambelillo</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../css/productos.css"
-    </head>
+	<head>
+		<title>Productos | Carnes Cambelillo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        <header>
-            <h1>Carnes Cambelillo</h1>
+		<link rel="stylesheet" href="../css/productos.css">
+	</head>
 
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="PRODUCTOS.html">Productos</a>
-                <a href="charcuteria.html">Charcutería</a>
-                <a href="carniceria.html">Carnicería</a>
-                <a href="polleria.html">Pollería</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </header>
+	<body>
 
-        <section id="destacados">
-            <h2>Productos Destacados</h2>
+		<header class="cabecera">
+			<div class="contenedor">
 
-            <div class="recuadros">
-                <div class="recuadro">
-                    <h3>Charcutería</h3>
-                    <p>Jamones, quesos y embutidos seleccionados.</p>
-                </div>
+				<div class="marca">
+					<img class="logo" src="../imágenes/cambelillo.png" alt="Logo Carnes Cambelillo">
+					<h1>Carnes Cambelillo</h1>
+				</div>
 
-                <div class="recuadro">
-                    <h3>Carnicería</h3>
-                    <p>Carnes frescas y preparadas al momento.</p>
-                </div>
+				<nav class="menu-principal">
+					<a href="../index.html">Inicio</a>
+					<a href="PRODUCTOS.html">Productos</a>
+					<a href="SERVICIOS.html">Servicios</a>
+					<a href="contacto.html">Contacto</a>
+				</nav>
 
-                <div class="recuadro">
-                    <h3>Pollería</h3>
-                    <p>Pollo fresco y elaborados.</p>
-                </div>
-            </div>
-        </section>
+				<div class="limpiar"></div>
+			</div>
+		</header>
 
-        <section id="tienda">
-            <h2>Nuestros Productos</h2>
+		<section class="portada">
+			<div class="contenedor">
+				<div class="portada-texto">
+					<h2>Nuestros productos</h2>
+					<p>Explora nuestras secciones y descubre carne fresca y elaborados.</p>
 
-            <nav class="menu-productos">
-                <ul>
-                    <li><a href="#charcuteria">Charcutería</a></li>
-                    <li><a href="#carniceria">Carnicería</a></li>
-                    <li><a href="#polleria">Pollería</a></li>
-                </ul>
-            </nav>
+					<p class="accesos">
+						<a href="#charcuteria">Charcutería</a>
+						<span>·</span>
+						<a href="carniceria.html">Carnicería</a>
+						<span>·</span>
+						<a href="#polleria">Pollería</a>
+					</p>
+				</div>
 
-            <section id="charcuteria">
-                <h3>Charcutería</h3>
-                <ul>
-                    <li>Jamón ibérico</li>
-                    <li>Queso curado</li>
-                    <li>Chorizo</li>
-                    <li>Salchichón</li>
-                </ul>
-            </section>
+				<div class="portada-imagen">
+					<img src="../imágenes/portada.jpg" alt="Mostrador de carnicería con productos frescos">
+				</div>
 
-            <section id="carniceria">
-                <h3>Carnicería</h3>
-                <ul>
-                    <li>Entrecot</li>
-                    <li>Carne picada</li>
-                    <li>Hamburguesas caseras</li>
-                </ul>
-            </section>
+				<div class="limpiar"></div>
+			</div>
+		</section>
 
-            <section id="polleria">
-                <h3>Pollería</h3>
-                <ul>
-                    <li>Pollo entero</li>
-                    <li>Pechugas</li>
-                    <li>Muslos y contramuslos</li>
-                </ul>
-            </section>
-        </section>
+		<section id="destacados" class="seccion">
+			<div class="contenedor">
+				<h2>Productos destacados</h2>
+				<p>Haz clic para ir a la sección que te interesa.</p>
 
-        <footer>
-            <p>
-                <a href="docs/contacto.html">Contactar</a> · Carnes Cambelillo
-            </p>
-        </footer>
-    </body>
+				<div class="recuadros">
+					<div class="recuadro">
+						<h3><a href="#charcuteria">Charcutería</a></h3>
+						<p>Jamones, quesos y embutidos seleccionados.</p>
+						<p><a class="enlace" href="#charcuteria">Ver charcutería</a></p>
+					</div>
+
+					<div class="recuadro">
+						<h3><a href="#carniceria">Carnicería</a></h3>
+						<p>Carnes frescas y preparadas al momento.</p>
+						<p><a class="enlace" href="#carniceria">Ver carnicería</a></p>
+					</div>
+
+					<div class="recuadro">
+						<h3><a href="#polleria">Pollería</a></h3>
+						<p>Pollo fresco y elaborados.</p>
+						<p><a class="enlace" href="#polleria">Ver pollería</a></p>
+					</div>
+
+					<div class="limpiar"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="tienda" class="seccion">
+			<div class="contenedor">
+				<h2>Catálogo por secciones</h2>
+				<p>Listado orientativo (puedes ampliarlo cuando quieras).</p>
+
+				<nav class="menu-productos">
+					<ul>
+						<li><a href="#charcuteria">Charcutería</a></li>
+						<li><a href="#carniceria">Carnicería</a></li>
+						<li><a href="#polleria">Pollería</a></li>
+					</ul>
+				</nav>
+
+				<section id="charcuteria" class="categoria">
+					<h3>Charcutería</h3>
+
+					<div class="categoria-imagen">
+						<img src="../imágenes/charcuteria.png" alt="Producto de charcutería">
+					</div>
+
+					<div class="categoria-lista">
+						<ul>
+							<li>Jamón ibérico</li>
+							<li>Queso curado</li>
+							<li>Chorizo</li>
+							<li>Salchichón</li>
+						</ul>
+						<p><a class="enlace" href="#destacados">Volver a destacados</a></p>
+					</div>
+
+					<div class="limpiar"></div>
+				</section>
+
+				<section id="carniceria" class="categoria">
+					<h3>Carnicería</h3>
+
+					<div class="categoria-imagen">
+						<img src="../imágenes/carniceria.png" alt="Carne de carnicería">
+					</div>
+
+					<div class="categoria-lista">
+						<ul>
+							<li>Entrecot</li>
+							<li>Carne picada</li>
+							<li>Hamburguesas caseras</li>
+						</ul>
+						<p><a class="enlace" href="#destacados">Volver a destacados</a></p>
+					</div>
+
+					<div class="limpiar"></div>
+				</section>
+
+				<section id="polleria" class="categoria">
+					<h3>Pollería</h3>
+
+					<div class="categoria-imagen">
+						<img src="../imágenes/polleria.png" alt="Productos de pollería">
+					</div>
+
+					<div class="categoria-lista">
+						<ul>
+							<li>Pollo entero</li>
+							<li>Pechugas</li>
+							<li>Muslos y contramuslos</li>
+						</ul>
+						<p><a class="enlace" href="#destacados">Volver a destacados</a></p>
+					</div>
+
+					<div class="limpiar"></div>
+				</section>
+			</div>
+		</section>
+
+	
+		<footer class="pie">
+			<div class="contenedor">
+				<p>
+					<a href="contacto.html">Contactar</a> · <a href="../index.html">Inicio</a> · Carnes Cambelillo
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>
