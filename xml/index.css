@@ -1,0 +1,63 @@
+pagina {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+cabecera {
+    display: block;
+    background-color: #8b0000;
+    color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+titulo {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+subtitulo {
+    display: block;
+    margin-top: 5px;
+}
+
+portada {
+    display: block;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+ofertas {
+    display: block;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+oferta {
+    display: block;
+    margin-bottom: 8px;
+}
+
+nombre {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+marcas {
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+marca {
+    display: block;
+    margin-bottom: 5px;
+}

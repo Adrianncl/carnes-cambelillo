@@ -1,0 +1,36 @@
+index {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+empresa {
+    display: block;
+    background-color: #8b0000;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+descripcion,
+direccion,
+telefono,
+horario {
+    display: block;
+    margin-top: 8px;
+}
+
+servicios {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+servicio {
+    display: block;
+    margin-top: 5px;
+}

@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.limpiar {
+	clear: both;
+}
+
+
+
+.cabecera {
+	background-color: #8b0000;
+	color: white;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.marca {
+	float: left;
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+}
+
+.marca h1 {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	margin-left: 10px;
+	font-size: 24px;
+}
+
+.marca p {
+	margin: 2px 0 0 0;
+	font-size: 13px;
+}
+
+.menu-principal {
+	float: right;
+	margin-top: 18px;
+}
+
+.menu-principal a:link,
+.menu-principal a:visited {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.menu-principal a:hover,
+.menu-principal a:active {
+	text-decoration: underline;
+}
+
+
+.seccion {
+	background-color: white;
+	margin-top: 20px;
+	padding: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dddddd;
+}
+
+.seccion h2 {
+	color: #8b0000;
+	margin-top: 0;
+	text-align: center;
+}
+
+.formulario {
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.campo {
+	margin-bottom: 14px;
+}
+
+.campo label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+	width: 100%;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cfcfcf;
+	border-radius: 4px;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
+
+.campo textarea {
+	resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
+	border-color: #8b0000;
+	outline: none;
+}
+
+.campo input[type="checkbox"] {
+	width: auto;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+
+.acciones {
+	text-align: center;
+	margin-top: 18px;
+}
+
+.boton {
+	background-color: #8b0000;
+	color: white;
+	border: none;
+	padding: 12px 22px;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.boton:hover {
+	background-color: white;
+	color: #8b0000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #8b0000;
+}
+
+.boton-secundario:link,
+.boton-secundario:visited {
+	display: inline-block;
+	margin-left: 12px;
+	padding: 12px 22px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: white;
+	color: #8b0000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #8b0000;
+}
+
+.boton-secundario:hover,
+.boton-secundario:active {
+	background-color: #8b0000;
+	color: white;
+}
+
+
+.pie {
+	margin-top: 20px;
+	padding: 15px;
+	background-color: #8b0000;
+	color: white;
+	text-align: center;
+}
+
+.pie a:link,
+.pie a:visited {
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}

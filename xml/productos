@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="productos.xsd">
-
+  <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="productos.xsd">
+<?xml-stylesheet type="text/css" href="productos.css"?>
 	    <producto id="P001">
 		      <nombre>Chorizo artesano</nombre>
 		      <categoria>Charcutería</categoria>

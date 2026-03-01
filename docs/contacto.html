@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contacto | Carnes Cambelillo</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f3f3f3;
-            padding: 20px;
-        }
+		<link rel="stylesheet" href="../css/contacto.css">
+	</head>
 
-        .container {
-            max-width: 450px;
-            margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-        }
+	<body>
+		<header class="cabecera">
+			<div class="contenedor">
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
+				<div class="marca">
+					<img class="logo" src="../imágenes/cambelillo.png" alt="Logo Carnes Cambelillo">
+					<h1>Carnes Cambelillo</h1>
+					<p>Charcutería · Pollería · Carnicería</p>
+				</div>
 
-        label {
-            font-weight: bold;
-            display: block;
-            margin: 15px 0 5px;
-        }
+				<nav class="menu-principal">
+					<a href="../index.html">Inicio</a>
+					<a href="SERVICIOS.html">Servicios</a>
+					<a href="PRODUCTOS.html">Productos</a>
+					<a href="contacto.html">Contacto</a>
+				</nav>
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 15px;
-        }
+				<div class="limpiar"></div>
 
-        textarea {
-            height: 120px;
-        }
+			</div>
+		</header>
 
-        button {
-            width: 100%;
-            background: #0084ff;
-            color: white;
-            padding: 12px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
+		<main class="contenedor">
+			<section class="seccion">
+				<h2>Formulario de Contacto</h2>
 
-        button:hover {
-            background: #006fd1;
-        }
-    </style>
-</head>
+				<form action="#" method="post" class="formulario">
 
-<body>
+					<p class="campo">
+						<label for="nombre">Nombre:</label>
+						<input type="text" id="nombre" name="nombre" required>
+					</p>
 
-    <div class="container">
-        <h2>Formulario de Contacto</h2>
+					<p class="campo">
+						<label for="apellidos">Apellidos:</label>
+						<input type="text" id="apellidos" name="apellidos">
+					</p>
 
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+					<p class="campo">
+						<label for="email">Correo electrónico:</label>
+						<input type="email" id="email" name="email" required>
+					</p>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+					<p class="campo">
+						<label for="telefono">Teléfono:</label>
+						<input type="tel" id="telefono" name="telefono">
+					</p>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
+					<p class="campo">
+						<label for="asunto">Asunto:</label>
+						<select id="asunto" name="asunto">
+							<option value="pedido">Duda sobre un pedido</option>
+							<option value="producto">Consulta de producto</option>
+							<option value="horario">Horario / tienda</option>
+							<option value="otros">Otros</option>
+						</select>
+					</p>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+					<p class="campo">
+						<label for="mensaje">Mensaje:</label>
+						<textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+					</p>
 
-            <button type="submit" formaction="../index.html">Enviar</button>
+					<p class="campo">
+						<label>
+							<input type="checkbox" name="acepto" required>
+							Acepto que se usen mis datos para responder a mi consulta.
+						</label>
+					</p>
 
-        </form>
-    </div>
+					<p class="acciones">
+						<button type="submit" class="boton">Enviar</button>
+						<a class="boton-secundario" href="../index.html">Volver a Inicio</a>
+					</p>
 
-</body>
+				</form>
+			</section>
+		</main>
+
+		<footer class="pie">
+			<div class="contenedor">
+				<p>
+					<a href="../index.html">Inicio</a> ·
+					<a href="SERVICIOS.html">Servicios</a> ·
+					<a href="PRODUCTOS.html">Productos</a> ·
+					<a href="contacto.html">Contacto</a>
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>
